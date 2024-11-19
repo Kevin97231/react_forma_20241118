@@ -30,4 +30,5 @@ function Consigne() {
     </>
   );
 }
+
 export default Consigne;
