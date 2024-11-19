@@ -31,6 +31,9 @@ function Navbar() {
             <li>
               <Link to={"/flux"}>Flux de données</Link>
             </li>
+            <li>
+              <Link to={"/formulaire"}>Les formulaires</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -44,6 +47,9 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/flux"}>Flux de données</Link>
+          </li>
+          <li>
+            <Link to={"/formulaire"}>Les formulaires</Link>
           </li>
         </ul>
       </div>
