@@ -13,6 +13,7 @@ function Exercice() {
   ];
 
   const [checked, setChecked] = useState(false);
+  const [userSearch, setUserSearch] = useState("");
 
   const fruits = products.filter((product) => product.category === "Fruits");
 
@@ -25,28 +26,47 @@ function Exercice() {
       <h1 className="pt-20">Exercice !!!</h1>
       <Consigne />
       <div className="p-5 w-fit border m-auto">
-        <label>Afficher hors-stock:</label>
-        <input
-          type="checkbox"
-          value={checked}
-          onChange={(e) => setChecked(e.target.checked)}
-        />
+        <div>
+          <label>Afficher hors-stock:</label>
+          <input
+            type="checkbox"
+            value={checked}
+            onChange={(e) => setChecked(e.target.checked)}
+          />
+        </div>
+        <div className="pt-2">
+          <label>Recherche: </label>
+          <input
+            type="text"
+            value={userSearch}
+            onChange={(e) => setUserSearch(e.target.value)}
+            className="input-bordered"
+          />
+        </div>
+
         <ListProduct
           products={fruits}
           title="Mon tableau de fruit :"
           afficherHorsStock={checked}
+          userSearch={userSearch}
         />
         <ListProduct
           products={vegetables}
           title="Mon tableau de légumes :"
           afficherHorsStock={checked}
+          userSearch={userSearch}
         />
       </div>
     </>
   );
 }
 
-function ListProduct({ products, title, afficherHorsStock = true }) {
+function ListProduct({
+  products,
+  title,
+  afficherHorsStock = true,
+  userSearch = "",
+}) {
   return (
     <>
       <h2>{title}</h2>
@@ -60,8 +80,10 @@ function ListProduct({ products, title, afficherHorsStock = true }) {
         </thead>
         <tbody>
           {products
-            .filter((product) =>
-              afficherHorsStock ? true : product.number > 0
+            .filter(
+              (product) =>
+                (afficherHorsStock ? true : product.number > 0) &&
+                product.name.toLowerCase().includes(userSearch.toLowerCase())
             )
             .map((product) => (
               <tr key={product.name}>
