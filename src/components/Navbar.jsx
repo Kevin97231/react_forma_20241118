@@ -34,6 +34,9 @@ function Navbar() {
             <li>
               <Link to={"/formulaire"}>Les formulaires</Link>
             </li>
+            <li>
+              <Link to={"/exercice"}>Exercice</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -50,6 +53,9 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/formulaire"}>Les formulaires</Link>
+          </li>
+          <li>
+            <Link to={"/exercice"}>Exercice</Link>
           </li>
         </ul>
       </div>

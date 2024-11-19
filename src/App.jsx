@@ -5,6 +5,7 @@ import HookUseState from "./components/views/HookUseState";
 import Navbar from "./components/Navbar";
 import Flux from "./components/views/Flux";
 import Formulaire from "./components/views/Formulaire";
+import Exercice from "./components/views/Exercice";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/hook-use-state" element={<HookUseState />} />
         <Route path="/flux" element={<Flux />} />
         <Route path="/formulaire" element={<Formulaire />} />
+        <Route path="/exercice" element={<Exercice />} />
       </Routes>
     </BrowserRouter>
   );
