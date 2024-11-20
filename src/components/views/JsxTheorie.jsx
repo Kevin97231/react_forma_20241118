@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function JsxTheorie() {
+export default function JsxTheorie() {
   let user = { name: "John", email: "jonh@email.com" };
   // let user = undefined;
 
@@ -86,5 +86,3 @@ const Title = ({ children, color = "blue", ...props }) => {
     </h1>
   );
 };
-
-export default JsxTheorie;

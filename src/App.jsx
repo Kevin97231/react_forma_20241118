@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Flux from "./components/views/Flux";
 import Formulaire from "./components/views/Formulaire";
 import Exercice from "./components/views/Exercice";
+import { UseEffect } from "./components/views/UseEffect";
+import { CycleDeVie } from "./components/views/CycleDeVie";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/flux" element={<Flux />} />
         <Route path="/formulaire" element={<Formulaire />} />
         <Route path="/exercice" element={<Exercice />} />
+        <Route path="/use-effect" element={<UseEffect />} />
+        <Route path="/cycle-de-vie" element={<CycleDeVie />} />
       </Routes>
     </BrowserRouter>
   );

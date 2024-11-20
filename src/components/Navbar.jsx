@@ -37,6 +37,12 @@ function Navbar() {
             <li>
               <Link to={"/exercice"}>Exercice</Link>
             </li>
+            <li>
+              <Link to={"/use-effect"}>use-effect</Link>
+            </li>
+            <li>
+              <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -56,6 +62,12 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/exercice"}>Exercice</Link>
+          </li>
+          <li>
+            <Link to={"/use-effect"}>use-effect</Link>
+          </li>
+          <li>
+            <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
           </li>
         </ul>
       </div>
