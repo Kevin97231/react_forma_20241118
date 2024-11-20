@@ -10,6 +10,7 @@ import { UseEffect } from "./components/views/UseEffect";
 import { CycleDeVie } from "./components/views/CycleDeVie";
 import { RequeteApi } from "./components/views/RequeteApi";
 import { HookPersonnalise } from "./components/views/HookPersonnalise";
+import { ExerciceApi } from "./components/views/ExerciceApi";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/cycle-de-vie" element={<CycleDeVie />} />
         <Route path="/requete" element={<RequeteApi />} />
         <Route path="/hook-perso" element={<HookPersonnalise />} />
+        <Route path="/exercice-api" element={<ExerciceApi />} />
       </Routes>
     </BrowserRouter>
   );
