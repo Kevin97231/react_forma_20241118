@@ -78,6 +78,9 @@ function Navbar() {
           <li>
             <Link to={"/requete"}>Les requêtes HTTP</Link>
           </li>
+          <li>
+            <Link to={"/hook-perso"}>Les hooks personnalisés</Link>
+          </li>
         </ul>
       </div>
       {/* <div className="navbar-end">
