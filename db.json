@@ -29,13 +29,6 @@
       "id": "b5c1"
     },
     {
-      "name": "Banane",
-      "price": "3",
-      "number": "15",
-      "category": "Vegetables",
-      "id": "ec50"
-    },
-    {
       "id": "7e0d",
       "category": "Fruits",
       "name": "TestNumber",
@@ -79,13 +72,6 @@
     },
     {
       "id": "13c7",
-      "category": "Vegetables",
-      "name": "Zucchini",
-      "number": 7,
-      "price": null
-    },
-    {
-      "id": "f2af",
       "category": "Vegetables",
       "name": "Zucchini",
       "number": 7,
