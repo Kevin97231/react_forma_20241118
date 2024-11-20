@@ -43,6 +43,9 @@ function Navbar() {
             <li>
               <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
             </li>
+            <li>
+              <Link to={"/requete"}>Les requêtes HTTP</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -68,6 +71,9 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
+          </li>
+          <li>
+            <Link to={"/requete"}>Les requêtes HTTP</Link>
           </li>
         </ul>
       </div>
