@@ -85,11 +85,11 @@
       "price": "2"
     },
     {
-      "id": "4ec8",
-      "category": "Fruits",
-      "name": "Ananas",
-      "price": "2",
-      "number": null
+      "id": "b283",
+      "category": "Test",
+      "name": "Name",
+      "price": "5",
+      "number": "6"
     }
   ]
 }

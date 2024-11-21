@@ -1,11 +1,13 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 
 export const ExempleRequetes = () => {
   const url = "http://localhost:3001/products";
 
   const [products, setProducts] = useState([]);
+
+  const formRef = useRef(null);
 
   useEffect(() => {
     const fetchData = () => {
@@ -45,6 +47,8 @@ export const ExempleRequetes = () => {
       // axios retournera en réponse le nouveau produit que l'on vient de créer
       .then((response) => setProducts((prev) => [...prev, response.data]))
       .catch((err) => console.error(err));
+
+    formRef.current.reset();
   };
 
   return (
@@ -77,7 +81,7 @@ export const ExempleRequetes = () => {
       </section>
       {/* Section formulaire */}
       <section className="m-5 border p-5">
-        <form onSubmit={addProduct}>
+        <form ref={formRef} onSubmit={addProduct}>
           <div className="grid grid-cols-4 mb-5 gap-5">
             <input
               type="text"
