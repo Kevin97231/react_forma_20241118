@@ -52,6 +52,9 @@ function Navbar() {
             <li>
               <Link to={"/exercice-api"}>Exercice API</Link>
             </li>
+            <li>
+              <Link to={"/hook-use-memo"}>Hook useMemo()</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -86,6 +89,9 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/exercice-api"}>Exercice API</Link>
+          </li>
+          <li>
+            <Link to={"/hook-use-memo"}>Hook useMemo()</Link>
           </li>
         </ul>
       </div>

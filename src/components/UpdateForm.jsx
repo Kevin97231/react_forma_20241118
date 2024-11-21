@@ -4,18 +4,16 @@ import { useEffect, useState } from "react";
 export const UpdateForm = ({ productToModify, updateProduct, closeModal }) => {
   const { id } = productToModify;
 
-  const [name, setName] = useState(productToModify.name);
-  const [price, setPrice] = useState(productToModify.price);
-  const [number, setNumber] = useState(productToModify.number);
-  const [category, setCategory] = useState(productToModify.category);
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
+  const [number, setNumber] = useState("");
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
-    if (productToModify !== undefined) {
-      setName(productToModify.name);
-      setPrice(productToModify.price);
-      setNumber(productToModify.number);
-      setCategory(productToModify.category);
-    }
+    setName(productToModify.name || "");
+    setPrice(productToModify.price || "");
+    setNumber(productToModify.number || "");
+    setCategory(productToModify.category || "");
   }, [productToModify]);
 
   const handleChange = (e) => {

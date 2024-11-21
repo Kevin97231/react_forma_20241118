@@ -1,20 +1,6 @@
 {
   "products": [
     {
-      "id": "f774",
-      "category": "5",
-      "name": "T",
-      "price": "5",
-      "number": "3"
-    },
-    {
-      "name": "goyave",
-      "price": "15",
-      "number": "10",
-      "category": "Fruits",
-      "id": "4e79"
-    },
-    {
       "id": "0d1c",
       "category": "Fruits",
       "name": "mangue",
@@ -29,32 +15,11 @@
       "number": "8"
     },
     {
-      "name": "Test",
+      "name": "Ananas",
       "price": "15",
       "number": 15,
       "category": "Fruits",
       "id": "7e0d"
-    },
-    {
-      "name": "TestNumber",
-      "price": "5",
-      "number": 15,
-      "category": "Fruits",
-      "id": "b9cb"
-    },
-    {
-      "id": "24e4",
-      "category": "Vegetables",
-      "name": "Banane",
-      "number": 15,
-      "price": 1.2
-    },
-    {
-      "name": "Bananeee",
-      "price": "1",
-      "number": 15,
-      "category": "Vegetables",
-      "id": "a564"
     },
     {
       "name": "Pomme",
@@ -68,27 +33,6 @@
       "category": "Vegetables",
       "name": "Zucchini",
       "price": "8",
-      "number": "6"
-    },
-    {
-      "id": "13c7",
-      "category": "Vegetables",
-      "name": "Zucchini",
-      "number": 7,
-      "price": null
-    },
-    {
-      "id": "6227",
-      "category": "test",
-      "name": "Pomme",
-      "number": "4",
-      "price": "2"
-    },
-    {
-      "id": "b283",
-      "category": "Test",
-      "name": "Name",
-      "price": "5",
       "number": "6"
     }
   ]

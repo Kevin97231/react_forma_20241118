@@ -11,6 +11,7 @@ import { CycleDeVie } from "./components/views/CycleDeVie";
 import { RequeteApi } from "./components/views/RequeteApi";
 import { HookPersonnalise } from "./components/views/HookPersonnalise";
 import { ExerciceApi } from "./components/views/ExerciceApi";
+import { HookUseMemo } from "./components/views/HookUseMemo";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/requete" element={<RequeteApi />} />
         <Route path="/hook-perso" element={<HookPersonnalise />} />
         <Route path="/exercice-api" element={<ExerciceApi />} />
+        <Route path="/hook-use-memo" element={<HookUseMemo />} />
       </Routes>
     </BrowserRouter>
   );
