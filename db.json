@@ -1,18 +1,11 @@
 {
   "products": [
     {
-      "id": "0d1c",
+      "name": "Poire",
+      "price": "10",
+      "number": "5",
       "category": "Fruits",
-      "name": "mangue",
-      "price": "4",
-      "number": "15"
-    },
-    {
-      "id": "b5c1",
-      "category": "Fruits",
-      "name": "mango",
-      "price": "16",
-      "number": "8"
+      "id": "0d1c"
     },
     {
       "name": "Ananas",
