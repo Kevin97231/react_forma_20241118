@@ -1,3 +1,12 @@
+import { WithoutUseMemo } from "../WithoutUseMemo";
+import { WithUseMemo } from "../WithUseMemo";
+
 export const HookUseMemo = () => {
-  return <h1 className="pt-20">Le hook useMemo()</h1>;
+  return (
+    <section>
+      <h1 className="pt-20">Le hook useMemo()</h1>
+      <WithoutUseMemo />
+      <WithUseMemo />
+    </section>
+  );
 };
