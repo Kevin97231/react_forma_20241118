@@ -41,11 +41,28 @@ export const ExerciceApi = () => {
       .catch((e) => console.error(e));
   };
 
+  const updateProduct = (updateProduct) => {
+    let updateProductUrl = url + `/${updateProduct.id}`;
+    axios
+      .put(updateProductUrl, updateProduct)
+      .then((response) =>
+        setProducts((prev) =>
+          prev.map((product) =>
+            product.id === response.data.id ? response.data : product
+          )
+        )
+      );
+  };
+
   return (
     <section>
       <h1 className="pt-20">Exercice API</h1>;
       <ConsigneApi />
-      <TableProduct products={products} removeFunction={deleteProduct} />
+      <TableProduct
+        products={products}
+        removeFunction={deleteProduct}
+        updateProduct={updateProduct}
+      />
       <button className="btn" onClick={() => setDisplayProductForm(true)}>
         Ajouter un produit
       </button>
